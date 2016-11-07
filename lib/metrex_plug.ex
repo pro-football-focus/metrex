@@ -11,7 +11,6 @@ defmodule MetrexPlug do
       :timer.now_diff(:os.timestamp, before_time) / 1_000 |> ExStatsD.histogram("resp.time")
       # @TODO - increment a counter for the URI
       ExStatsD.increment("resp.count")
-
       conn
     end
   end
