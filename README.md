@@ -28,14 +28,14 @@ The package can be installed as:
     config :app, App.Repo,
       loggers: [
         {Ecto.LogEntry, :log, []},
-        {MetrexEctoLogger, :log, []}
+        {Metrex.EctoLogger, :log, []}
       ]
     ```
 
   4. Add `metrex` connection plug to lib/app/endpoint.ex:
 
     ```elixir
-    plug MetrexPlug
+    plug Metrex.Plug
     ```
 
   5. Configure `ex_statsd` connection in your environment file:
