@@ -10,7 +10,7 @@ The package can be installed as:
 
     ```elixir
     def deps do
-      [{:metrex, github: "pro-football-focus/metrex", tag: "0.1.7"}]
+      [{:metrex, github: "pro-football-focus/metrex", tag: "0.2.0"}]
     end
     ```
 
