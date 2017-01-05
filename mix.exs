@@ -3,7 +3,7 @@ defmodule Metrex.Mixfile do
 
   def project do
     [app: :metrex,
-     version: "0.2.0",
+     version: "0.3.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -32,7 +32,7 @@ defmodule Metrex.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:plug, "~> 1.0"},
+      {:plug, ">= 1.2.0"},
       {:ex_statsd, ">= 0.5.1"}
     ]
   end
